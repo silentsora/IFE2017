@@ -87,6 +87,9 @@ function init(){
 	torus3.castShadow = true;
 	torus4.castShadow = true;
 	plane.receiveShadow = true;
+	cube1.receiveShadow = true;
+	cube2.receiveShadow = true;
+	cylinder.receiveShadow = true;
 
 	scene.add(plane,cube1,cube2,cylinder,torus1,torus2,torus3,torus4);
 
