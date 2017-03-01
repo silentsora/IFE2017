@@ -1,7 +1,9 @@
 function init(){
 	// renderer
 	var renderer = new THREE.WebGLRenderer({
-		canvas: document.getElementById("mainCanvas")
+		canvas: document.getElementById("mainCanvas"),
+		antialias:true
+
 	});
 	renderer.setClearColor(0x666666);
 	renderer.shadowMap.enabled = true;
