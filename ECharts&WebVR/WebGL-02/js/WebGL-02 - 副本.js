@@ -101,8 +101,6 @@ function init(){
 	light.shadow.camera.near = 1;
 	light.shadow.camera.far = 15;
 	light.shadow.camera.fov = 30;
-	light.shadow.mapSize.width = 3000;
-	light.shadow.mapSize.height = 3000;
 	light.castShadow = true;
 
 	scene.add(light);
