@@ -28,13 +28,13 @@ function init(){
 	var scene = new THREE.Scene();
 
 	// camera 
-	var cameraPers = new THREE.PerspectiveCamera(30,16/9,1,20);
+	var cameraPers = new THREE.PerspectiveCamera(60,16/9,1,30);
 	cameraPers.position.set(-4,3,5);
 	cameraPers.lookAt(new THREE.Vector3(0,0,0));
 	scene.add(cameraPers);
 
 	// object
-	var plane = new THREE.Mesh(new THREE.PlaneGeometry(6,12),
+	var plane = new THREE.Mesh(new THREE.PlaneGeometry(20,20),
 		new THREE.MeshLambertMaterial({
 			color: 0xcffccc
 		})
@@ -125,17 +125,19 @@ function init(){
 	scene.add(plane,pivot);
 
 	// light
-	var light = new THREE.SpotLight(0xffffff,1.3, 100, Math.PI / 4, 25);
+	var light = new THREE.SpotLight(0xffffff,1.3, 100, Math.PI / 3, 30);
 
 	light.position.set(-6,5,-4);
 	light.target = cube1;
 
 	light.shadow.camera.near = 1;
-	light.shadow.camera.far = 15;
+	light.shadow.camera.far = 30;
 	light.shadow.camera.fov = 30;
 	light.shadow.mapSize.width = 3000;
 	light.shadow.mapSize.height = 3000;
 	light.castShadow = true;
+	var helper = new THREE.CameraHelper(light.shadow.camera);
+	scene.add(helper);
 
 	scene.add(light);
 
@@ -168,6 +170,8 @@ function init(){
 			torus1.rotation.y = Math.PI/2; 
 			torus3.rotation.y = Math.PI/2;	//torus reset
 		}
+
+		cameraPers.lookAt(pivot.position);
 
 		renderer.render(scene,cameraPers);
 
@@ -205,6 +209,21 @@ function init(){
 	}
 
 	id = requestAnimationFrame(draw);
+
+	// control
+	var controls = new THREE.TrackballControls(cameraPers);
+	controls.addEventListener('change',function(){
+		renderer.render(scene,cameraPers);
+	});
+
+	controls.rotateSpeed = 2.0;
+
+	function animate(){
+		requestAnimationFrame(animate);
+		controls.update();
+	}
+
+	animate();
 }
 
 function stop(){
