@@ -6,6 +6,8 @@ window.requestAnimationFrame = requestAnimationFrame;
 
 var scene,camera,renderer,id,stat = null;
 var isMoving = false;
+var a = 0.005;
+var v = 0;
 
 function init(){
 	// stats
@@ -159,6 +161,7 @@ function init(){
 
 		document.onkeyup = function(){	//stop
 			isMoving = false;
+			v = 0;
 		}
 
 		if(!isMoving){
@@ -175,12 +178,16 @@ function init(){
 
 	function carMoveAbove(){
 		isMoving = true;
-		pivot.translateZ(-0.05);
+		v += a;
+		if(v>0.2)v=0.2;
+		pivot.translateZ(-v);
 	}
 
 	function carMoveback(){
 		isMoving = true;
-		pivot.translateZ(0.05);
+		v += a;
+		if(v>0.2)v=0.2;
+		pivot.translateZ(v);
 	}
 
 	function carTurnLeft(){
