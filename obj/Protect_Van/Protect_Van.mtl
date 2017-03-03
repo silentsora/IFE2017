@@ -9,7 +9,7 @@ Ks 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 1
-map_Kd Protect_D.png
+map_Kd Protect_D.jpg
 
 newmtl VamProtectGlass
 Ns 96.078431
@@ -19,4 +19,4 @@ Ks 0.000000 0.000000 0.000000
 Ni 1.000000
 d 0.000000
 illum 1
-map_Kd Protect_D.png
+map_Kd Protect_D.jpg

@@ -19,10 +19,16 @@
 		canvas{
 			width: 100%;
 		}
-		p{
+		.info{
 			position: absolute;
-			top: 0;
-			right: 0;
+			top: 10px;
+			right: 10px;
+			color: white;
+		}
+		.data{
+			position: absolute;
+			top: 40px;
+			right: 10px;
 			color: white;
 		}
 	</style>
@@ -32,7 +38,8 @@
 </head>
 <body>
 	<canvas id="mainCanvas" width="1280px" height="720px"></canvas>
-	<p>W/前进，S/后退，A/左转，D/右转</p>
+	<p class="info">W/前进，S/后退，A/左转，D/右转</p>
+	<p class="data" id="data">speed: 0</p>
 </body>
 <script type="text/javascript" src="js/WebGL-05.js"></script>
 </html>

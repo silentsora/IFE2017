@@ -4,10 +4,13 @@ var requestAnimationFrame = window.requestAnimationFrame
         || window.msRequestAnimationFrame;
 window.requestAnimationFrame = requestAnimationFrame;
 
-var scene,camera,renderer,id,stat = null;
+var scene = camera = renderer = id = stat = null;
 var isMoving = false;
-var a = 0.005;
+var a = 0.002;
 var v = 0;
+var keyA = keyS = keyD = keyW = false;
+
+init();
 
 function init(){
 	// stats
@@ -145,31 +148,9 @@ function init(){
 	function draw(){
 		stat.begin();
 
-		document.onkeydown = function(event){	//move
-			var e = event || window.event || arguments.callee.caller.arguments[0];
-			if(e && e.keyCode == 87){
-				carMoveAbove();
-			}
-			if(e && e.keyCode == 83){
-				carMoveback();
-			}
-			if(e && e.keyCode == 65){
-				carTurnLeft();
-			}
-			if(e && e.keyCode == 68){
-				carTurnRight();
-			}
-		}
+		keyCheck();
 
-		document.onkeyup = function(){	//stop
-			isMoving = false;
-			v = 0;
-		}
-
-		if(!isMoving){
-			torus1.rotation.y = Math.PI/2; 
-			torus3.rotation.y = Math.PI/2;	//torus reset
-		}
+		carMove();
 
 		cameraPers.lookAt(pivot.position);
 
@@ -178,34 +159,6 @@ function init(){
 		id = requestAnimationFrame(draw);
 
 		stat.end();
-	}
-
-	function carMoveAbove(){
-		isMoving = true;
-		v += a;
-		if(v>0.2)v=0.2;
-		pivot.translateZ(-v);
-	}
-
-	function carMoveback(){
-		isMoving = true;
-		v += a;
-		if(v>0.2)v=0.2;
-		pivot.translateZ(v);
-	}
-
-	function carTurnLeft(){
-		isMoving = true;
-		pivot.rotation.y += Math.PI/128;
-		torus1.rotation.y = Math.PI/2 + Math.PI/16;
-		torus3.rotation.y = Math.PI/2 + Math.PI/16;
-	}
-
-	function carTurnRight(){
-		isMoving = true;
-		pivot.rotation.y -= Math.PI/128;
-		torus1.rotation.y = Math.PI/2 - Math.PI/16;
-		torus3.rotation.y = Math.PI/2 - Math.PI/16;
 	}
 
 	id = requestAnimationFrame(draw);
@@ -224,6 +177,99 @@ function init(){
 	}
 
 	animate();
+
+	function keyCheck(){
+		document.onkeydown = function(event){	//move
+			var e = event || window.event || arguments.callee.caller.arguments[0];
+			if(e && e.keyCode == 87){
+				keyW = true;
+			}
+			if(e && e.keyCode == 83){
+				keyS = true;
+			}
+			if(e && e.keyCode == 65){
+				keyA = true;
+			}
+			if(e && e.keyCode == 68){
+				keyD = true;
+			}
+		}
+
+		document.onkeyup = function(event){	//stop
+			var e = event || window.event || arguments.callee.caller.arguments[0];
+			if(e && e.keyCode == 87){
+				keyW = false;
+			}
+			if(e && e.keyCode == 83){
+				keyS = false;
+			}
+			if(e && e.keyCode == 65){
+				keyA = false;
+			}
+			if(e && e.keyCode == 68){
+				keyD = false;
+			}
+		}
+	}
+
+	function carMove(){
+		document.getElementById("data").innerHTML = 'speed: ' + Math.abs(v).toFixed(2);	// show speed
+
+		if(keyW)carMoveAbove();
+		if(keyA && keyS === false)carTurnLeft();
+		if(keyD && keyS === false)carTurnRight();
+
+		if(keyS){
+			if(keyA)carTurnRight();
+			if(keyD)carTurnLeft();
+			carMoveBack();
+		}
+
+		if(keyW === false && keyS === false){
+			isMoving = false;
+
+			if(v > 0){
+				v -= 0.003;
+				if(v < 0)v = 0;
+			}
+			if(v < 0){
+				v += 0.003;		
+				if(v > 0)v = 0;
+			} 
+			pivot.translateZ(v);	//inertia
+		}
+
+		if(!isMoving){
+			torus1.rotation.y = Math.PI/2; 
+			torus3.rotation.y = Math.PI/2;	//torus reset
+		}
+
+		function carMoveAbove(){
+			isMoving = true;
+			if(v > -0.2)v -= a;
+			pivot.translateZ(v);
+		}
+
+		function carMoveBack(){
+			isMoving = true;
+			if(v < 0.2)v += a;
+			pivot.translateZ(v);
+		}
+
+		function carTurnLeft(){
+			isMoving = true;
+			pivot.rotation.y += Math.PI/128;
+			torus1.rotation.y = Math.PI/2 + Math.PI/16;
+			torus3.rotation.y = Math.PI/2 + Math.PI/16;
+		}
+
+		function carTurnRight(){
+			isMoving = true;
+			pivot.rotation.y -= Math.PI/128;
+			torus1.rotation.y = Math.PI/2 - Math.PI/16;
+			torus3.rotation.y = Math.PI/2 - Math.PI/16;
+		}
+	}
 }
 
 function stop(){
@@ -232,5 +278,3 @@ function stop(){
 		id = null;
 	}
 }
-
-init();
