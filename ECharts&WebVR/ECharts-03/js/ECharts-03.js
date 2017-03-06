@@ -17,6 +17,6 @@ ajax({
 		})
 	},
 	fail: function(status) {
-		alert(status);
+		console.log(status);
 	}
 })
