@@ -55,7 +55,25 @@ function calculateMA(dayCount,data){
 		result[i] = result[i].toFixed(2);
 	};
 	return result;
-}
+};
+
+var next = 0;
+function changeData(data){
+	var nowData = {
+		date: [],
+		data: [],
+		volume: []
+	};
+
+	nowData.date = data.date.slice(next,next + 30);
+	nowData.data = data.data.slice(next,next + 30);
+	nowData.volume = data.volume.slice(next,next + 30);
+
+	if(next == data.length - 30)next = 0;
+	else next++;
+
+	return nowData;
+};
 
 function buildChart(data){
 	option = {
@@ -107,34 +125,18 @@ function buildChart(data){
 				gridIndex: 1
 			}
 		],
-		dataZoom: [
-			{
-				type: 'inside',
-				xAxisIndex: [0,1],
-				start: 75,
-				end: 100
-			},
-			{
-				type: 'slider',
-				show: true,
-				xAxisIndex: [0,1],
-				y: '92%',
-				start: 75,
-				end: 100
-			}
-		],
 		series: [
 			{
 				name: '日K',
 				type: 'candlestick',
-				data: data.data
+				data: changeData(data).data
 			},
 			{
 				name:'成交量',
 				type: 'bar',
 				xAxisIndex: 1,
 				yAxisIndex: 1,
-				data: data.volume
+				data: changeData(data).volume
 			},
 			{
 				name: 'MA5',
@@ -145,7 +147,7 @@ function buildChart(data){
 				lineStyle: {
                     normal: {opacity: 0.3}
                 },
-				data: calculateMA(5,data.data)
+				data: calculateMA(5,changeData(data).data)
 			},
 			{
 				name: 'MA10',
@@ -156,7 +158,7 @@ function buildChart(data){
 				lineStyle: {
                     normal: {opacity: 0.3}
                 },
-				data: calculateMA(10,data.data)
+				data: calculateMA(10,changeData(data).data)
 			},
 			{
 				name: 'MA20',
@@ -167,7 +169,7 @@ function buildChart(data){
 				lineStyle: {
                     normal: {opacity: 0.3}
                 },
-				data: calculateMA(20,data.data)
+				data: calculateMA(20,changeData(data).data)
 			},
 			{
 				name: 'MA30',
@@ -178,11 +180,47 @@ function buildChart(data){
 				lineStyle: {
                     normal: {opacity: 0.3}
                 },
-				data: calculateMA(30,data.data)
+				data: calculateMA(30,changeData(data).data)
 			}
 		]
 	};
 
 	myChart.hideLoading();
 	myChart.setOption(option);
+
+	setInterval(function(){
+		var nowData = changeData(data);
+		myChart.setOption({
+			xAxis: [{
+				data: nowData.date
+			},
+			{
+				data: nowData.date
+			}],
+			series: [{
+				name: '日K',
+				data: nowData.data
+			},
+			{
+				name: '成交量',
+				data: nowData.volume
+			},
+			{
+				name: 'MA5',
+				data: calculateMA(5,nowData.data)
+			},
+			{
+				name: 'MA10',
+				data: calculateMA(10,nowData.data)
+			},
+			{
+				name: 'MA20',
+				data: calculateMA(20,nowData.data)
+			},
+			{
+				name: 'MA30',
+				data: calculateMA(30,nowData.data)
+			}]
+		});
+	},200);
 }
