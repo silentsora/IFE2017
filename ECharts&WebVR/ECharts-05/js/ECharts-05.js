@@ -21,9 +21,9 @@ myChart.showLoading();
 
 	function splitData(rawData){
 		var tempData = {
-			'date': [],
-			'data': [],
-			'volume': []
+			date: [],
+			data: [],
+			volume: []
 		};
 		for (var i = 0;i < rawData.length;i++){
 			tempData.date.push(rawData[i].Date);
@@ -46,18 +46,24 @@ myChart.showLoading();
 
 function calculateMA(dayCount,data){
 	var result = [];
-	for(var i = dayCount-1;i<data.length;i++){
+
+	for(var i = dayCount-1;i < data.data.length;i++){
 		result[i] = 0;
-		for(var j = 0;j<dayCount;j++){
-			result[i] += parseFloat(data[i-j][1]);
-		}
+		for(var j = 0;j < dayCount;j++){
+			result[i] += parseFloat(data.data[i-j][1]);
+		};
 		result[i] /= dayCount;
 		result[i] = result[i].toFixed(2);
 	};
+
 	return result;
 };
 
-var next = 0;
+function nowMA(dataMA){
+	return dataMA.slice(pastDay,pastDay + 30)
+};
+
+var pastDay = 0;
 function changeData(data){
 	var nowData = {
 		date: [],
@@ -65,17 +71,24 @@ function changeData(data){
 		volume: []
 	};
 
-	nowData.date = data.date.slice(next,next + 30);
-	nowData.data = data.data.slice(next,next + 30);
-	nowData.volume = data.volume.slice(next,next + 30);
+	nowData.date = data.date.slice(pastDay,pastDay + 30);
+	nowData.data = data.data.slice(pastDay,pastDay + 30);
+	nowData.volume = data.volume.slice(pastDay,pastDay + 30);
 
-	if(next == data.length - 30)next = 0;
-	else next++;
+	if(pastDay == data.length - 30)pastDay = 0;
+	else pastDay++;
 
 	return nowData;
 };
 
 function buildChart(data){
+	var nowData = changeData(data);
+
+	var dataMA5 = calculateMA(5,data);
+	var dataMA10 = calculateMA(10,data);
+	var dataMA20 = calculateMA(20,data);
+	var dataMA30 = calculateMA(30,data);
+
 	option = {
 		title: {
 			text: 'K线图',
@@ -129,14 +142,14 @@ function buildChart(data){
 			{
 				name: '日K',
 				type: 'candlestick',
-				data: changeData(data).data
+				data: nowData.data
 			},
 			{
 				name:'成交量',
 				type: 'bar',
 				xAxisIndex: 1,
 				yAxisIndex: 1,
-				data: changeData(data).volume
+				data: nowData.volume
 			},
 			{
 				name: 'MA5',
@@ -147,7 +160,7 @@ function buildChart(data){
 				lineStyle: {
                     normal: {opacity: 0.3}
                 },
-				data: calculateMA(5,changeData(data).data)
+				data: nowMA(dataMA5)
 			},
 			{
 				name: 'MA10',
@@ -158,7 +171,7 @@ function buildChart(data){
 				lineStyle: {
                     normal: {opacity: 0.3}
                 },
-				data: calculateMA(10,changeData(data).data)
+				data: nowMA(dataMA10)
 			},
 			{
 				name: 'MA20',
@@ -169,7 +182,7 @@ function buildChart(data){
 				lineStyle: {
                     normal: {opacity: 0.3}
                 },
-				data: calculateMA(20,changeData(data).data)
+				data: nowMA(dataMA20)
 			},
 			{
 				name: 'MA30',
@@ -180,7 +193,7 @@ function buildChart(data){
 				lineStyle: {
                     normal: {opacity: 0.3}
                 },
-				data: calculateMA(30,changeData(data).data)
+				data: nowMA(dataMA30)
 			}
 		]
 	};
@@ -207,19 +220,19 @@ function buildChart(data){
 			},
 			{
 				name: 'MA5',
-				data: calculateMA(5,nowData.data)
+				data: nowMA(dataMA5)
 			},
 			{
 				name: 'MA10',
-				data: calculateMA(10,nowData.data)
+				data: nowMA(dataMA10)
 			},
 			{
 				name: 'MA20',
-				data: calculateMA(20,nowData.data)
+				data: nowMA(dataMA20)
 			},
 			{
 				name: 'MA30',
-				data: calculateMA(30,nowData.data)
+				data: nowMA(dataMA30)
 			}]
 		});
 	},200);
