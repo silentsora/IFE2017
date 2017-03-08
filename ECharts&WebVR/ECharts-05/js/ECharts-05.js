@@ -1,48 +1,46 @@
 var myChart = echarts.init(document.getElementById("main"));
 myChart.showLoading();
 
-(function (){
-	var rawData = [];
-	ajax({
-		url: '../../echarts_data/ticker_A.json',
-		type: "GET",
-		dataType: "json",
-		success: function(response,xml){
-			rawData = JSON.parse(response).concat();
-			var newData = splitData(rawData);
+ajax({
+	url: '../../echarts_data/ticker_A.json',
+	type: "GET",
+	dataType: "json",
+	success: function(response,xml){
+		var rawData = [];
+		rawData = JSON.parse(response).concat();
+		var newData = splitData(rawData);
 
-			buildChart(newData);
-		},
-		fail: function(status) {
-			console.log(status);
-			return false;
-		}
-	});
+		buildChart(newData);
+	},
+	fail: function(status) {
+		console.log(status);
+		return false;
+	}
+});
 
-	function splitData(rawData){
-		var tempData = {
-			date: [],
-			data: [],
-			volume: []
-		};
-		for (var i = 0;i < rawData.length;i++){
-			tempData.date.push(rawData[i].Date);
-
-			// date format
-			var tempArr = [];
-			tempArr[0] = tempData.date[i].slice(0,4);
-			tempArr[1] = tempData.date[i].slice(4,6);
-			tempArr[2] = tempData.date[i].slice(6,8);
-			tempData.date[i] = tempArr.join('-');
-
-			tempData.data[i] = [];
-			tempData.data[i].push(rawData[i].Open,rawData[i].Close,rawData[i].Low,rawData[i].High);
-			
-			tempData.volume.push(rawData[i].Volume);
-		};
-		return tempData;
+function splitData(rawData){
+	var tempData = {
+		date: [],
+		data: [],
+		volume: []
 	};
-})();
+	for (var i = 0;i < rawData.length;i++){
+		tempData.date.push(rawData[i].Date);
+
+		// date format
+		var tempArr = [];
+		tempArr[0] = tempData.date[i].slice(0,4);
+		tempArr[1] = tempData.date[i].slice(4,6);
+		tempArr[2] = tempData.date[i].slice(6,8);
+		tempData.date[i] = tempArr.join('-');
+
+		tempData.data[i] = [];
+		tempData.data[i].push(rawData[i].Open,rawData[i].Close,rawData[i].Low,rawData[i].High);
+		
+		tempData.volume.push(rawData[i].Volume);
+	};
+	return tempData;
+};
 
 function calculateMA(dayCount,data){
 	var result = [];

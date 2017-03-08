@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.3" version="1.3" xmlns:viz="http://www.gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.3 http://www.gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2017-03-08">
+    <creator>Gephi 0.9</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="value" title="value" type="string"></attribute>
+    </attributes>
+    <nodes>
+      <node id="0.0" label="1000 Years for Revenge">
+        <attvalues>
+          <attvalue for="value" value="n"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-186.79756" y="151.86821"></viz:position>
+      </node>
+      <node id="1.0" label="Bush vs. the Beltway">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-163.01445" y="329.3352"></viz:position>
+      </node>
+      <node id="2.0" label="Charlie Wilson's War">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="404.4175" y="-434.8361"></viz:position>
+      </node>
+      <node id="3.0" label="Losing Bin Laden">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="448.22733" y="364.71985"></viz:position>
+      </node>
+      <node id="4.0" label="Sleeping With the Devil">
+        <attvalues>
+          <attvalue for="value" value="n"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-236.66554" y="-323.135"></viz:position>
+      </node>
+      <node id="5.0" label="The Man Who Warned America">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="72.10231" y="486.7751"></viz:position>
+      </node>
+      <node id="6.0" label="Why America Slept">
+        <attvalues>
+          <attvalue for="value" value="n"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-315.02182" y="-290.51117"></viz:position>
+      </node>
+      <node id="7.0" label="Ghost Wars">
+        <attvalues>
+          <attvalue for="value" value="n"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-44.25239" y="-176.87422"></viz:position>
+      </node>
+      <node id="8.0" label="A National Party No More">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-202.89992" y="-173.8098"></viz:position>
+      </node>
+      <node id="9.0" label="Bush Country">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="229.36116" y="-322.8568"></viz:position>
+      </node>
+      <node id="10.0" label="Dereliction of Duty">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="18.440691" y="88.38848"></viz:position>
+      </node>
+      <node id="11.0" label="Legacy">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="169.25545" y="253.51604"></viz:position>
+      </node>
+      <node id="12.0" label="Off with Their Heads">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="394.70944" y="29.247488"></viz:position>
+      </node>
+      <node id="13.0" label="Persecution">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-290.01843" y="155.81908"></viz:position>
+      </node>
+      <node id="14.0" label="Rumsfeld's War">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="305.2319" y="55.93023"></viz:position>
+      </node>
+      <node id="15.0" label="Breakdown">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-359.63205" y="-482.07553"></viz:position>
+      </node>
+      <node id="16.0" label="Betrayal">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-137.68367" y="449.21313"></viz:position>
+      </node>
+      <node id="17.0" label="Shut Up and Sing">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-236.95372" y="-172.60716"></viz:position>
+      </node>
+      <node id="18.0" label="Meant To Be">
+        <attvalues>
+          <attvalue for="value" value="n"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="435.7435" y="-184.04073"></viz:position>
+      </node>
+      <node id="19.0" label="The Right Man">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-76.98833" y="-273.4812"></viz:position>
+      </node>
+      <node id="20.0" label="Ten Minutes from Normal">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-373.6157" y="468.1139"></viz:position>
+      </node>
+      <node id="21.0" label="Hillary's Scheme">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="217.99275" y="335.4947"></viz:position>
+      </node>
+      <node id="22.0" label="The French Betrayal of America">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-314.19742" y="351.29932"></viz:position>
+      </node>
+      <node id="23.0" label="Tales from the Left Coast">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-108.11803" y="-67.80326"></viz:position>
+      </node>
+      <node id="24.0" label="Hating America">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="332.8008" y="-173.24883"></viz:position>
+      </node>
+      <node id="25.0" label="The Third Terrorist">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="382.20468" y="144.38445"></viz:position>
+      </node>
+      <node id="26.0" label="Endgame">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="153.2187" y="-177.74852"></viz:position>
+      </node>
+      <node id="27.0" label="Spin Sisters">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-256.41922" y="162.64586"></viz:position>
+      </node>
+      <node id="28.0" label="All the Shah's Men">
+        <attvalues>
+          <attvalue for="value" value="n"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="285.89645" y="-389.12262"></viz:position>
+      </node>
+      <node id="29.0" label="Dangerous Dimplomacy">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="201.36006" y="-133.79204"></viz:position>
+      </node>
+      <node id="30.0" label="The Price of Loyalty">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-104.43559" y="-249.2"></viz:position>
+      </node>
+      <node id="31.0" label="House of Bush, House of Saud">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-96.91115" y="168.77269"></viz:position>
+      </node>
+      <node id="32.0" label="The Death of Right and Wrong">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="12.52547" y="-474.9689"></viz:position>
+      </node>
+      <node id="33.0" label="Useful Idiots">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="30.191607" y="337.82593"></viz:position>
+      </node>
+      <node id="34.0" label="The O'Reilly Factor">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-320.65564" y="-443.07144"></viz:position>
+      </node>
+      <node id="35.0" label="Let Freedom Ring">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="308.22867" y="-481.59192"></viz:position>
+      </node>
+      <node id="36.0" label="Those Who Trespass">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-13.637006" y="145.43736"></viz:position>
+      </node>
+      <node id="37.0" label="Bias">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-388.68375" y="201.12193"></viz:position>
+      </node>
+      <node id="38.0" label="Slander">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-499.28986" y="263.45544"></viz:position>
+      </node>
+      <node id="39.0" label="The Savage Nation">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-205.22585" y="-85.80567"></viz:position>
+      </node>
+      <node id="40.0" label="Deliver Us from Evil">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-202.42372" y="93.37878"></viz:position>
+      </node>
+      <node id="41.0" label="Give Me a Break">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="109.789444" y="-9.304421"></viz:position>
+      </node>
+      <node id="42.0" label="The Enemy Within">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="287.87668" y="435.79297"></viz:position>
+      </node>
+      <node id="43.0" label="The Real America">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-445.13568" y="-135.43898"></viz:position>
+      </node>
+      <node id="44.0" label="Who's Looking Out for You?">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="303.02542" y="320.44446"></viz:position>
+      </node>
+      <node id="45.0" label="The Official Handbook Vast Right Wing Conspiracy">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="301.04123" y="-17.15272"></viz:position>
+      </node>
+      <node id="46.0" label="Power Plays">
+        <attvalues>
+          <attvalue for="value" value="n"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="445.3967" y="-326.96313"></viz:position>
+      </node>
+      <node id="47.0" label="Arrogance">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-108.6248" y="86.695244"></viz:position>
+      </node>
+      <node id="48.0" label="The Perfect Wife">
+        <attvalues>
+          <attvalue for="value" value="n"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-457.84976" y="-52.93763"></viz:position>
+      </node>
+      <node id="49.0" label="The Bushes">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="259.84952" y="309.76068"></viz:position>
+      </node>
+      <node id="50.0" label="Things Worth Fighting For">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="150.44893" y="216.79338"></viz:position>
+      </node>
+      <node id="51.0" label="Surprise, Security, the American Experience">
+        <attvalues>
+          <attvalue for="value" value="n"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-259.09137" y="270.41278"></viz:position>
+      </node>
+      <node id="52.0" label="Allies">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="453.6995" y="345.72174"></viz:position>
+      </node>
+      <node id="53.0" label="Why Courage Matters">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="148.00728" y="92.78924"></viz:position>
+      </node>
+      <node id="54.0" label="Hollywood Interrupted">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-438.7027" y="494.14868"></viz:position>
+      </node>
+      <node id="55.0" label="Fighting Back">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-311.94763" y="81.83654"></viz:position>
+      </node>
+      <node id="56.0" label="We Will Prevail">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-321.54123" y="410.29156"></viz:position>
+      </node>
+      <node id="57.0" label="The Faith of George W Bush">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-51.659832" y="-401.24725"></viz:position>
+      </node>
+      <node id="58.0" label="Rise of the Vulcans">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="348.07632" y="-338.812"></viz:position>
+      </node>
+      <node id="59.0" label="Downsize This!">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="443.56863" y="-464.21185"></viz:position>
+      </node>
+      <node id="60.0" label="Stupid White Men">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-16.867537" y="202.84178"></viz:position>
+      </node>
+      <node id="61.0" label="Rush Limbaugh Is a Big Fat Idiot">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="242.73" y="-326.84924"></viz:position>
+      </node>
+      <node id="62.0" label="The Best Democracy Money Can Buy">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="206.05971" y="463.47015"></viz:position>
+      </node>
+      <node id="63.0" label="The Culture of Fear">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="9.167132" y="115.79931"></viz:position>
+      </node>
+      <node id="64.0" label="America Unbound">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="90.53786" y="419.37305"></viz:position>
+      </node>
+      <node id="65.0" label="The Choice">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="381.80124" y="-45.80146"></viz:position>
+      </node>
+      <node id="66.0" label="The Great Unraveling">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="261.56778" y="-20.136026"></viz:position>
+      </node>
+      <node id="67.0" label="Rogue Nation">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1.5186337" y="270.64893"></viz:position>
+      </node>
+      <node id="68.0" label="Soft Power">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-48.734447" y="365.8609"></viz:position>
+      </node>
+      <node id="69.0" label="Colossus">
+        <attvalues>
+          <attvalue for="value" value="n"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-356.07394" y="-378.40802"></viz:position>
+      </node>
+      <node id="70.0" label="The Sorrows of Empire">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-469.32935" y="66.152885"></viz:position>
+      </node>
+      <node id="71.0" label="Against All Enemies">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-141.83415" y="166.33269"></viz:position>
+      </node>
+      <node id="72.0" label="American Dynasty">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-258.036" y="386.02222"></viz:position>
+      </node>
+      <node id="73.0" label="Big Lies">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="231.20454" y="-316.09204"></viz:position>
+      </node>
+      <node id="74.0" label="The Lies of George W. Bush">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-159.15697" y="-435.1865"></viz:position>
+      </node>
+      <node id="75.0" label="Worse Than Watergate">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-102.01274" y="-177.62947"></viz:position>
+      </node>
+      <node id="76.0" label="Plan of Attack">
+        <attvalues>
+          <attvalue for="value" value="n"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="125.40346" y="-67.791756"></viz:position>
+      </node>
+      <node id="77.0" label="Bush at War">
+        <attvalues>
+          <attvalue for="value" value="c"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="200.07655" y="58.54589"></viz:position>
+      </node>
+      <node id="78.0" label="The New Pearl Harbor">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-124.27336" y="-402.62494"></viz:position>
+      </node>
+      <node id="79.0" label="Bushwomen">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="458.8704" y="11.359122"></viz:position>
+      </node>
+      <node id="80.0" label="The Bubble of American Supremacy">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-442.52362" y="-279.16855"></viz:position>
+      </node>
+      <node id="81.0" label="Living History">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-325.77933" y="-51.882423"></viz:position>
+      </node>
+      <node id="82.0" label="The Politics of Truth">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="253.15706" y="-494.23434"></viz:position>
+      </node>
+      <node id="83.0" label="Fanatics and Fools">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-414.749" y="-449.325"></viz:position>
+      </node>
+      <node id="84.0" label="Bushwhacked">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-323.71036" y="-336.26733"></viz:position>
+      </node>
+      <node id="85.0" label="Disarming Iraq">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-62.60258" y="267.1903"></viz:position>
+      </node>
+      <node id="86.0" label="Lies and the Lying Liars Who Tell Them">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-203.38902" y="259.05133"></viz:position>
+      </node>
+      <node id="87.0" label="MoveOn's 50 Ways to Love Your Country">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-11.825788" y="-134.76509"></viz:position>
+      </node>
+      <node id="88.0" label="The Buying of the President 2004">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="58.505695" y="-483.10593"></viz:position>
+      </node>
+      <node id="89.0" label="Perfectly Legal">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="253.89229" y="123.290825"></viz:position>
+      </node>
+      <node id="90.0" label="Hegemony or Survival">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="410.2299" y="391.97485"></viz:position>
+      </node>
+      <node id="91.0" label="The Exception to the Rulers">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="250.53377" y="-49.78019"></viz:position>
+      </node>
+      <node id="92.0" label="Freethinkers">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-121.91188" y="437.9048"></viz:position>
+      </node>
+      <node id="93.0" label="Had Enough?">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-485.7847" y="-393.92426"></viz:position>
+      </node>
+      <node id="94.0" label="It's Still the Economy, Stupid!">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="217.57692" y="-208.30049"></viz:position>
+      </node>
+      <node id="95.0" label="We're Right They're Wrong">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-499.85434" y="112.66778"></viz:position>
+      </node>
+      <node id="96.0" label="What Liberal Media?">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="252.60872" y="-106.414925"></viz:position>
+      </node>
+      <node id="97.0" label="The Clinton Wars">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="53.713154" y="388.57422"></viz:position>
+      </node>
+      <node id="98.0" label="Weapons of Mass Deception">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-125.71712" y="-100.83463"></viz:position>
+      </node>
+      <node id="99.0" label="Dude, Where's My Country?">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="23.312761" y="120.84362"></viz:position>
+      </node>
+      <node id="100.0" label="Thieves in High Places">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="312.27133" y="-390.82437"></viz:position>
+      </node>
+      <node id="101.0" label="Shrub">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="241.75014" y="-105.5897"></viz:position>
+      </node>
+      <node id="102.0" label="Buck Up Suck Up">
+        <attvalues>
+          <attvalue for="value" value="l"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="214.73738" y="141.46306"></viz:position>
+      </node>
+      <node id="103.0" label="The Future of Freedom">
+        <attvalues>
+          <attvalue for="value" value="n"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-458.46356" y="-359.70996"></viz:position>
+      </node>
+      <node id="104.0" label="Empire">
+        <attvalues>
+          <attvalue for="value" value="n"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="276.80954" y="500.4978"></viz:position>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="6594" source="1.0" target="0.0"></edge>
+      <edge id="6595" source="2.0" target="0.0"></edge>
+      <edge id="6596" source="3.0" target="0.0"></edge>
+      <edge id="6597" source="3.0" target="1.0"></edge>
+      <edge id="6598" source="4.0" target="0.0"></edge>
+      <edge id="6599" source="4.0" target="2.0"></edge>
+      <edge id="6600" source="5.0" target="0.0"></edge>
+      <edge id="6601" source="5.0" target="1.0"></edge>
+      <edge id="6602" source="5.0" target="2.0"></edge>
+      <edge id="6603" source="5.0" target="3.0"></edge>
+      <edge id="6604" source="5.0" target="4.0"></edge>
+      <edge id="6605" source="6.0" target="0.0"></edge>
+      <edge id="6606" source="6.0" target="1.0"></edge>
+      <edge id="6607" source="6.0" target="4.0"></edge>
+      <edge id="6608" source="6.0" target="5.0"></edge>
+      <edge id="6609" source="7.0" target="2.0"></edge>
+      <edge id="6610" source="7.0" target="5.0"></edge>
+      <edge id="6611" source="7.0" target="6.0"></edge>
+      <edge id="6612" source="8.0" target="3.0"></edge>
+      <edge id="6613" source="9.0" target="3.0"></edge>
+      <edge id="6614" source="9.0" target="8.0"></edge>
+      <edge id="6615" source="10.0" target="3.0"></edge>
+      <edge id="6616" source="10.0" target="6.0"></edge>
+      <edge id="6617" source="10.0" target="8.0"></edge>
+      <edge id="6618" source="11.0" target="3.0"></edge>
+      <edge id="6619" source="11.0" target="8.0"></edge>
+      <edge id="6620" source="11.0" target="9.0"></edge>
+      <edge id="6621" source="11.0" target="10.0"></edge>
+      <edge id="6622" source="12.0" target="3.0"></edge>
+      <edge id="6623" source="12.0" target="6.0"></edge>
+      <edge id="6624" source="12.0" target="8.0"></edge>
+      <edge id="6625" source="12.0" target="9.0"></edge>
+      <edge id="6626" source="12.0" target="10.0"></edge>
+      <edge id="6627" source="12.0" target="11.0"></edge>
+      <edge id="6628" source="13.0" target="3.0"></edge>
+      <edge id="6629" source="13.0" target="8.0"></edge>
+      <edge id="6630" source="13.0" target="11.0"></edge>
+      <edge id="6631" source="13.0" target="12.0"></edge>
+      <edge id="6632" source="14.0" target="3.0"></edge>
+      <edge id="6633" source="14.0" target="8.0"></edge>
+      <edge id="6634" source="14.0" target="9.0"></edge>
+      <edge id="6635" source="14.0" target="11.0"></edge>
+      <edge id="6636" source="14.0" target="12.0"></edge>
+      <edge id="6637" source="14.0" target="7.0"></edge>
+      <edge id="6638" source="15.0" target="3.0"></edge>
+      <edge id="6639" source="15.0" target="10.0"></edge>
+      <edge id="6640" source="15.0" target="12.0"></edge>
+      <edge id="6641" source="16.0" target="3.0"></edge>
+      <edge id="6642" source="16.0" target="10.0"></edge>
+      <edge id="6643" source="16.0" target="15.0"></edge>
+      <edge id="6644" source="17.0" target="3.0"></edge>
+      <edge id="6645" source="17.0" target="11.0"></edge>
+      <edge id="6646" source="17.0" target="12.0"></edge>
+      <edge id="6647" source="17.0" target="13.0"></edge>
+      <edge id="6648" source="18.0" target="3.0"></edge>
+      <edge id="6649" source="18.0" target="6.0"></edge>
+      <edge id="6650" source="18.0" target="12.0"></edge>
+      <edge id="6651" source="19.0" target="3.0"></edge>
+      <edge id="6652" source="19.0" target="10.0"></edge>
+      <edge id="6653" source="20.0" target="3.0"></edge>
+      <edge id="6654" source="20.0" target="8.0"></edge>
+      <edge id="6655" source="20.0" target="9.0"></edge>
+      <edge id="6656" source="20.0" target="11.0"></edge>
+      <edge id="6657" source="21.0" target="3.0"></edge>
+      <edge id="6658" source="21.0" target="8.0"></edge>
+      <edge id="6659" source="21.0" target="10.0"></edge>
+      <edge id="6660" source="21.0" target="11.0"></edge>
+      <edge id="6661" source="22.0" target="3.0"></edge>
+      <edge id="6662" source="22.0" target="6.0"></edge>
+      <edge id="6663" source="22.0" target="8.0"></edge>
+      <edge id="6664" source="22.0" target="11.0"></edge>
+      <edge id="6665" source="23.0" target="3.0"></edge>
+      <edge id="6666" source="23.0" target="8.0"></edge>
+      <edge id="6667" source="23.0" target="12.0"></edge>
+      <edge id="6668" source="23.0" target="21.0"></edge>
+      <edge id="6669" source="24.0" target="3.0"></edge>
+      <edge id="6670" source="24.0" target="8.0"></edge>
+      <edge id="6671" source="24.0" target="9.0"></edge>
+      <edge id="6672" source="24.0" target="12.0"></edge>
+      <edge id="6673" source="24.0" target="20.0"></edge>
+      <edge id="6674" source="25.0" target="3.0"></edge>
+      <edge id="6675" source="25.0" target="6.0"></edge>
+      <edge id="6676" source="25.0" target="14.0"></edge>
+      <edge id="6677" source="25.0" target="22.0"></edge>
+      <edge id="6678" source="26.0" target="3.0"></edge>
+      <edge id="6679" source="26.0" target="8.0"></edge>
+      <edge id="6680" source="26.0" target="11.0"></edge>
+      <edge id="6681" source="26.0" target="14.0"></edge>
+      <edge id="6682" source="26.0" target="24.0"></edge>
+      <edge id="6683" source="27.0" target="3.0"></edge>
+      <edge id="6684" source="27.0" target="8.0"></edge>
+      <edge id="6685" source="27.0" target="9.0"></edge>
+      <edge id="6686" source="27.0" target="11.0"></edge>
+      <edge id="6687" source="27.0" target="23.0"></edge>
+      <edge id="6688" source="28.0" target="4.0"></edge>
+      <edge id="6689" source="29.0" target="4.0"></edge>
+      <edge id="6690" source="29.0" target="6.0"></edge>
+      <edge id="6691" source="29.0" target="11.0"></edge>
+      <edge id="6692" source="29.0" target="13.0"></edge>
+      <edge id="6693" source="30.0" target="4.0"></edge>
+      <edge id="6694" source="30.0" target="7.0"></edge>
+      <edge id="6695" source="31.0" target="4.0"></edge>
+      <edge id="6696" source="31.0" target="30.0"></edge>
+      <edge id="6697" source="32.0" target="8.0"></edge>
+      <edge id="6698" source="32.0" target="12.0"></edge>
+      <edge id="6699" source="32.0" target="13.0"></edge>
+      <edge id="6700" source="32.0" target="23.0"></edge>
+      <edge id="6701" source="33.0" target="32.0"></edge>
+      <edge id="6702" source="33.0" target="8.0"></edge>
+      <edge id="6703" source="33.0" target="10.0"></edge>
+      <edge id="6704" source="33.0" target="12.0"></edge>
+      <edge id="6705" source="33.0" target="23.0"></edge>
+      <edge id="6706" source="35.0" target="34.0"></edge>
+      <edge id="6707" source="35.0" target="8.0"></edge>
+      <edge id="6708" source="35.0" target="10.0"></edge>
+      <edge id="6709" source="36.0" target="34.0"></edge>
+      <edge id="6710" source="36.0" target="35.0"></edge>
+      <edge id="6711" source="36.0" target="12.0"></edge>
+      <edge id="6712" source="37.0" target="34.0"></edge>
+      <edge id="6713" source="37.0" target="8.0"></edge>
+      <edge id="6714" source="37.0" target="10.0"></edge>
+      <edge id="6715" source="37.0" target="35.0"></edge>
+      <edge id="6716" source="37.0" target="33.0"></edge>
+      <edge id="6717" source="38.0" target="34.0"></edge>
+      <edge id="6718" source="38.0" target="10.0"></edge>
+      <edge id="6719" source="38.0" target="35.0"></edge>
+      <edge id="6720" source="38.0" target="12.0"></edge>
+      <edge id="6721" source="38.0" target="37.0"></edge>
+      <edge id="6722" source="38.0" target="33.0"></edge>
+      <edge id="6723" source="39.0" target="34.0"></edge>
+      <edge id="6724" source="39.0" target="10.0"></edge>
+      <edge id="6725" source="39.0" target="35.0"></edge>
+      <edge id="6726" source="39.0" target="12.0"></edge>
+      <edge id="6727" source="39.0" target="38.0"></edge>
+      <edge id="6728" source="39.0" target="33.0"></edge>
+      <edge id="6729" source="40.0" target="8.0"></edge>
+      <edge id="6730" source="40.0" target="35.0"></edge>
+      <edge id="6731" source="40.0" target="12.0"></edge>
+      <edge id="6732" source="40.0" target="13.0"></edge>
+      <edge id="6733" source="40.0" target="20.0"></edge>
+      <edge id="6734" source="40.0" target="22.0"></edge>
+      <edge id="6735" source="40.0" target="39.0"></edge>
+      <edge id="6736" source="40.0" target="24.0"></edge>
+      <edge id="6737" source="40.0" target="25.0"></edge>
+      <edge id="6738" source="40.0" target="26.0"></edge>
+      <edge id="6739" source="40.0" target="27.0"></edge>
+      <edge id="6740" source="41.0" target="8.0"></edge>
+      <edge id="6741" source="41.0" target="9.0"></edge>
+      <edge id="6742" source="41.0" target="40.0"></edge>
+      <edge id="6743" source="41.0" target="12.0"></edge>
+      <edge id="6744" source="41.0" target="36.0"></edge>
+      <edge id="6745" source="41.0" target="27.0"></edge>
+      <edge id="6746" source="42.0" target="8.0"></edge>
+      <edge id="6747" source="42.0" target="40.0"></edge>
+      <edge id="6748" source="42.0" target="13.0"></edge>
+      <edge id="6749" source="42.0" target="39.0"></edge>
+      <edge id="6750" source="43.0" target="8.0"></edge>
+      <edge id="6751" source="43.0" target="35.0"></edge>
+      <edge id="6752" source="43.0" target="13.0"></edge>
+      <edge id="6753" source="43.0" target="42.0"></edge>
+      <edge id="6754" source="44.0" target="8.0"></edge>
+      <edge id="6755" source="44.0" target="40.0"></edge>
+      <edge id="6756" source="44.0" target="35.0"></edge>
+      <edge id="6757" source="44.0" target="12.0"></edge>
+      <edge id="6758" source="44.0" target="13.0"></edge>
+      <edge id="6759" source="45.0" target="8.0"></edge>
+      <edge id="6760" source="45.0" target="9.0"></edge>
+      <edge id="6761" source="45.0" target="40.0"></edge>
+      <edge id="6762" source="45.0" target="11.0"></edge>
+      <edge id="6763" source="45.0" target="26.0"></edge>
+      <edge id="6764" source="46.0" target="8.0"></edge>
+      <edge id="6765" source="46.0" target="12.0"></edge>
+      <edge id="6766" source="47.0" target="9.0"></edge>
+      <edge id="6767" source="47.0" target="40.0"></edge>
+      <edge id="6768" source="47.0" target="41.0"></edge>
+      <edge id="6769" source="47.0" target="11.0"></edge>
+      <edge id="6770" source="47.0" target="12.0"></edge>
+      <edge id="6771" source="47.0" target="13.0"></edge>
+      <edge id="6772" source="47.0" target="42.0"></edge>
+      <edge id="6773" source="47.0" target="36.0"></edge>
+      <edge id="6774" source="47.0" target="37.0"></edge>
+      <edge id="6775" source="47.0" target="17.0"></edge>
+      <edge id="6776" source="47.0" target="33.0"></edge>
+      <edge id="6777" source="47.0" target="45.0"></edge>
+      <edge id="6778" source="47.0" target="46.0"></edge>
+      <edge id="6779" source="47.0" target="23.0"></edge>
+      <edge id="6780" source="47.0" target="24.0"></edge>
+      <edge id="6781" source="47.0" target="26.0"></edge>
+      <edge id="6782" source="47.0" target="27.0"></edge>
+      <edge id="6783" source="48.0" target="9.0"></edge>
+      <edge id="6784" source="48.0" target="20.0"></edge>
+      <edge id="6785" source="49.0" target="9.0"></edge>
+      <edge id="6786" source="49.0" target="20.0"></edge>
+      <edge id="6787" source="49.0" target="31.0"></edge>
+      <edge id="6788" source="49.0" target="48.0"></edge>
+      <edge id="6789" source="50.0" target="9.0"></edge>
+      <edge id="6790" source="50.0" target="11.0"></edge>
+      <edge id="6791" source="51.0" target="9.0"></edge>
+      <edge id="6792" source="52.0" target="9.0"></edge>
+      <edge id="6793" source="52.0" target="22.0"></edge>
+      <edge id="6794" source="52.0" target="51.0"></edge>
+      <edge id="6795" source="53.0" target="40.0"></edge>
+      <edge id="6796" source="53.0" target="20.0"></edge>
+      <edge id="6797" source="53.0" target="24.0"></edge>
+      <edge id="6798" source="53.0" target="26.0"></edge>
+      <edge id="6799" source="54.0" target="40.0"></edge>
+      <edge id="6800" source="54.0" target="41.0"></edge>
+      <edge id="6801" source="54.0" target="12.0"></edge>
+      <edge id="6802" source="54.0" target="47.0"></edge>
+      <edge id="6803" source="54.0" target="23.0"></edge>
+      <edge id="6804" source="54.0" target="27.0"></edge>
+      <edge id="6805" source="55.0" target="10.0"></edge>
+      <edge id="6806" source="55.0" target="12.0"></edge>
+      <edge id="6807" source="55.0" target="15.0"></edge>
+      <edge id="6808" source="55.0" target="19.0"></edge>
+      <edge id="6809" source="56.0" target="11.0"></edge>
+      <edge id="6810" source="56.0" target="19.0"></edge>
+      <edge id="6811" source="56.0" target="43.0"></edge>
+      <edge id="6812" source="57.0" target="13.0"></edge>
+      <edge id="6813" source="57.0" target="56.0"></edge>
+      <edge id="6814" source="57.0" target="20.0"></edge>
+      <edge id="6815" source="57.0" target="48.0"></edge>
+      <edge id="6816" source="57.0" target="49.0"></edge>
+      <edge id="6817" source="58.0" target="14.0"></edge>
+      <edge id="6818" source="58.0" target="7.0"></edge>
+      <edge id="6819" source="58.0" target="30.0"></edge>
+      <edge id="6820" source="58.0" target="49.0"></edge>
+      <edge id="6821" source="58.0" target="50.0"></edge>
+      <edge id="6822" source="58.0" target="51.0"></edge>
+      <edge id="6823" source="58.0" target="52.0"></edge>
+      <edge id="6824" source="60.0" target="59.0"></edge>
+      <edge id="6825" source="61.0" target="59.0"></edge>
+      <edge id="6826" source="62.0" target="59.0"></edge>
+      <edge id="6827" source="62.0" target="60.0"></edge>
+      <edge id="6828" source="63.0" target="59.0"></edge>
+      <edge id="6829" source="63.0" target="60.0"></edge>
+      <edge id="6830" source="63.0" target="62.0"></edge>
+      <edge id="6831" source="64.0" target="58.0"></edge>
+      <edge id="6832" source="64.0" target="51.0"></edge>
+      <edge id="6833" source="64.0" target="52.0"></edge>
+      <edge id="6834" source="65.0" target="64.0"></edge>
+      <edge id="6835" source="65.0" target="58.0"></edge>
+      <edge id="6836" source="65.0" target="51.0"></edge>
+      <edge id="6837" source="66.0" target="64.0"></edge>
+      <edge id="6838" source="66.0" target="28.0"></edge>
+      <edge id="6839" source="66.0" target="30.0"></edge>
+      <edge id="6840" source="67.0" target="64.0"></edge>
+      <edge id="6841" source="67.0" target="65.0"></edge>
+      <edge id="6842" source="67.0" target="66.0"></edge>
+      <edge id="6843" source="67.0" target="30.0"></edge>
+      <edge id="6844" source="68.0" target="64.0"></edge>
+      <edge id="6845" source="68.0" target="58.0"></edge>
+      <edge id="6846" source="68.0" target="65.0"></edge>
+      <edge id="6847" source="69.0" target="64.0"></edge>
+      <edge id="6848" source="69.0" target="58.0"></edge>
+      <edge id="6849" source="69.0" target="65.0"></edge>
+      <edge id="6850" source="69.0" target="51.0"></edge>
+      <edge id="6851" source="70.0" target="64.0"></edge>
+      <edge id="6852" source="70.0" target="66.0"></edge>
+      <edge id="6853" source="70.0" target="30.0"></edge>
+      <edge id="6854" source="71.0" target="7.0"></edge>
+      <edge id="6855" source="71.0" target="68.0"></edge>
+      <edge id="6856" source="71.0" target="70.0"></edge>
+      <edge id="6857" source="72.0" target="71.0"></edge>
+      <edge id="6858" source="72.0" target="28.0"></edge>
+      <edge id="6859" source="72.0" target="66.0"></edge>
+      <edge id="6860" source="72.0" target="49.0"></edge>
+      <edge id="6861" source="72.0" target="70.0"></edge>
+      <edge id="6862" source="73.0" target="71.0"></edge>
+      <edge id="6863" source="73.0" target="72.0"></edge>
+      <edge id="6864" source="73.0" target="66.0"></edge>
+      <edge id="6865" source="73.0" target="30.0"></edge>
+      <edge id="6866" source="73.0" target="31.0"></edge>
+      <edge id="6867" source="74.0" target="71.0"></edge>
+      <edge id="6868" source="74.0" target="72.0"></edge>
+      <edge id="6869" source="74.0" target="73.0"></edge>
+      <edge id="6870" source="74.0" target="66.0"></edge>
+      <edge id="6871" source="74.0" target="30.0"></edge>
+      <edge id="6872" source="74.0" target="31.0"></edge>
+      <edge id="6873" source="75.0" target="71.0"></edge>
+      <edge id="6874" source="75.0" target="72.0"></edge>
+      <edge id="6875" source="75.0" target="73.0"></edge>
+      <edge id="6876" source="75.0" target="74.0"></edge>
+      <edge id="6877" source="75.0" target="30.0"></edge>
+      <edge id="6878" source="75.0" target="31.0"></edge>
+      <edge id="6879" source="75.0" target="70.0"></edge>
+      <edge id="6880" source="76.0" target="71.0"></edge>
+      <edge id="6881" source="76.0" target="72.0"></edge>
+      <edge id="6882" source="76.0" target="75.0"></edge>
+      <edge id="6883" source="76.0" target="66.0"></edge>
+      <edge id="6884" source="76.0" target="30.0"></edge>
+      <edge id="6885" source="76.0" target="31.0"></edge>
+      <edge id="6886" source="76.0" target="49.0"></edge>
+      <edge id="6887" source="76.0" target="53.0"></edge>
+      <edge id="6888" source="77.0" target="71.0"></edge>
+      <edge id="6889" source="77.0" target="75.0"></edge>
+      <edge id="6890" source="77.0" target="58.0"></edge>
+      <edge id="6891" source="77.0" target="30.0"></edge>
+      <edge id="6892" source="77.0" target="19.0"></edge>
+      <edge id="6893" source="77.0" target="31.0"></edge>
+      <edge id="6894" source="77.0" target="76.0"></edge>
+      <edge id="6895" source="78.0" target="71.0"></edge>
+      <edge id="6896" source="78.0" target="72.0"></edge>
+      <edge id="6897" source="78.0" target="74.0"></edge>
+      <edge id="6898" source="78.0" target="75.0"></edge>
+      <edge id="6899" source="78.0" target="31.0"></edge>
+      <edge id="6900" source="79.0" target="71.0"></edge>
+      <edge id="6901" source="79.0" target="72.0"></edge>
+      <edge id="6902" source="79.0" target="74.0"></edge>
+      <edge id="6903" source="79.0" target="75.0"></edge>
+      <edge id="6904" source="79.0" target="30.0"></edge>
+      <edge id="6905" source="80.0" target="71.0"></edge>
+      <edge id="6906" source="80.0" target="72.0"></edge>
+      <edge id="6907" source="80.0" target="66.0"></edge>
+      <edge id="6908" source="80.0" target="30.0"></edge>
+      <edge id="6909" source="81.0" target="71.0"></edge>
+      <edge id="6910" source="82.0" target="71.0"></edge>
+      <edge id="6911" source="82.0" target="72.0"></edge>
+      <edge id="6912" source="82.0" target="73.0"></edge>
+      <edge id="6913" source="82.0" target="74.0"></edge>
+      <edge id="6914" source="82.0" target="75.0"></edge>
+      <edge id="6915" source="82.0" target="30.0"></edge>
+      <edge id="6916" source="82.0" target="31.0"></edge>
+      <edge id="6917" source="82.0" target="76.0"></edge>
+      <edge id="6918" source="83.0" target="71.0"></edge>
+      <edge id="6919" source="83.0" target="73.0"></edge>
+      <edge id="6920" source="83.0" target="75.0"></edge>
+      <edge id="6921" source="83.0" target="30.0"></edge>
+      <edge id="6922" source="83.0" target="76.0"></edge>
+      <edge id="6923" source="84.0" target="72.0"></edge>
+      <edge id="6924" source="84.0" target="74.0"></edge>
+      <edge id="6925" source="84.0" target="75.0"></edge>
+      <edge id="6926" source="84.0" target="66.0"></edge>
+      <edge id="6927" source="84.0" target="73.0"></edge>
+      <edge id="6928" source="84.0" target="60.0"></edge>
+      <edge id="6929" source="84.0" target="30.0"></edge>
+      <edge id="6930" source="84.0" target="62.0"></edge>
+      <edge id="6931" source="84.0" target="76.0"></edge>
+      <edge id="6932" source="84.0" target="79.0"></edge>
+      <edge id="6933" source="84.0" target="81.0"></edge>
+      <edge id="6934" source="84.0" target="82.0"></edge>
+      <edge id="6935" source="84.0" target="83.0"></edge>
+      <edge id="6936" source="85.0" target="72.0"></edge>
+      <edge id="6937" source="85.0" target="7.0"></edge>
+      <edge id="6938" source="85.0" target="58.0"></edge>
+      <edge id="6939" source="85.0" target="65.0"></edge>
+      <edge id="6940" source="85.0" target="66.0"></edge>
+      <edge id="6941" source="86.0" target="72.0"></edge>
+      <edge id="6942" source="86.0" target="73.0"></edge>
+      <edge id="6943" source="86.0" target="66.0"></edge>
+      <edge id="6944" source="86.0" target="84.0"></edge>
+      <edge id="6945" source="86.0" target="60.0"></edge>
+      <edge id="6946" source="86.0" target="30.0"></edge>
+      <edge id="6947" source="86.0" target="61.0"></edge>
+      <edge id="6948" source="86.0" target="76.0"></edge>
+      <edge id="6949" source="86.0" target="81.0"></edge>
+      <edge id="6950" source="87.0" target="72.0"></edge>
+      <edge id="6951" source="87.0" target="74.0"></edge>
+      <edge id="6952" source="87.0" target="84.0"></edge>
+      <edge id="6953" source="87.0" target="83.0"></edge>
+      <edge id="6954" source="88.0" target="72.0"></edge>
+      <edge id="6955" source="88.0" target="74.0"></edge>
+      <edge id="6956" source="88.0" target="66.0"></edge>
+      <edge id="6957" source="88.0" target="84.0"></edge>
+      <edge id="6958" source="89.0" target="72.0"></edge>
+      <edge id="6959" source="89.0" target="73.0"></edge>
+      <edge id="6960" source="89.0" target="66.0"></edge>
+      <edge id="6961" source="89.0" target="84.0"></edge>
+      <edge id="6962" source="89.0" target="86.0"></edge>
+      <edge id="6963" source="89.0" target="88.0"></edge>
+      <edge id="6964" source="90.0" target="72.0"></edge>
+      <edge id="6965" source="90.0" target="66.0"></edge>
+      <edge id="6966" source="90.0" target="70.0"></edge>
+      <edge id="6967" source="91.0" target="72.0"></edge>
+      <edge id="6968" source="91.0" target="74.0"></edge>
+      <edge id="6969" source="91.0" target="75.0"></edge>
+      <edge id="6970" source="91.0" target="31.0"></edge>
+      <edge id="6971" source="91.0" target="90.0"></edge>
+      <edge id="6972" source="91.0" target="79.0"></edge>
+      <edge id="6973" source="92.0" target="72.0"></edge>
+      <edge id="6974" source="92.0" target="73.0"></edge>
+      <edge id="6975" source="92.0" target="75.0"></edge>
+      <edge id="6976" source="93.0" target="73.0"></edge>
+      <edge id="6977" source="93.0" target="66.0"></edge>
+      <edge id="6978" source="93.0" target="86.0"></edge>
+      <edge id="6979" source="93.0" target="30.0"></edge>
+      <edge id="6980" source="94.0" target="73.0"></edge>
+      <edge id="6981" source="94.0" target="84.0"></edge>
+      <edge id="6982" source="94.0" target="93.0"></edge>
+      <edge id="6983" source="95.0" target="73.0"></edge>
+      <edge id="6984" source="95.0" target="94.0"></edge>
+      <edge id="6985" source="95.0" target="61.0"></edge>
+      <edge id="6986" source="96.0" target="73.0"></edge>
+      <edge id="6987" source="96.0" target="66.0"></edge>
+      <edge id="6988" source="96.0" target="84.0"></edge>
+      <edge id="6989" source="96.0" target="94.0"></edge>
+      <edge id="6990" source="97.0" target="73.0"></edge>
+      <edge id="6991" source="97.0" target="66.0"></edge>
+      <edge id="6992" source="97.0" target="84.0"></edge>
+      <edge id="6993" source="97.0" target="86.0"></edge>
+      <edge id="6994" source="97.0" target="96.0"></edge>
+      <edge id="6995" source="97.0" target="81.0"></edge>
+      <edge id="6996" source="98.0" target="73.0"></edge>
+      <edge id="6997" source="98.0" target="74.0"></edge>
+      <edge id="6998" source="98.0" target="87.0"></edge>
+      <edge id="6999" source="98.0" target="91.0"></edge>
+      <edge id="7000" source="99.0" target="73.0"></edge>
+      <edge id="7001" source="99.0" target="74.0"></edge>
+      <edge id="7002" source="99.0" target="66.0"></edge>
+      <edge id="7003" source="99.0" target="84.0"></edge>
+      <edge id="7004" source="99.0" target="93.0"></edge>
+      <edge id="7005" source="99.0" target="60.0"></edge>
+      <edge id="7006" source="99.0" target="59.0"></edge>
+      <edge id="7007" source="99.0" target="30.0"></edge>
+      <edge id="7008" source="99.0" target="62.0"></edge>
+      <edge id="7009" source="99.0" target="63.0"></edge>
+      <edge id="7010" source="99.0" target="90.0"></edge>
+      <edge id="7011" source="100.0" target="73.0"></edge>
+      <edge id="7012" source="100.0" target="66.0"></edge>
+      <edge id="7013" source="100.0" target="84.0"></edge>
+      <edge id="7014" source="100.0" target="86.0"></edge>
+      <edge id="7015" source="100.0" target="96.0"></edge>
+      <edge id="7016" source="100.0" target="98.0"></edge>
+      <edge id="7017" source="100.0" target="99.0"></edge>
+      <edge id="7018" source="100.0" target="62.0"></edge>
+      <edge id="7019" source="100.0" target="79.0"></edge>
+      <edge id="7020" source="100.0" target="91.0"></edge>
+      <edge id="7021" source="100.0" target="83.0"></edge>
+      <edge id="7022" source="101.0" target="84.0"></edge>
+      <edge id="7023" source="101.0" target="86.0"></edge>
+      <edge id="7024" source="101.0" target="94.0"></edge>
+      <edge id="7025" source="101.0" target="100.0"></edge>
+      <edge id="7026" source="101.0" target="61.0"></edge>
+      <edge id="7027" source="102.0" target="93.0"></edge>
+      <edge id="7028" source="102.0" target="94.0"></edge>
+      <edge id="7029" source="102.0" target="95.0"></edge>
+      <edge id="7030" source="102.0" target="46.0"></edge>
+      <edge id="7031" source="103.0" target="67.0"></edge>
+      <edge id="7032" source="104.0" target="67.0"></edge>
+      <edge id="7033" source="104.0" target="69.0"></edge>
+      <edge id="7034" source="104.0" target="103.0"></edge>
+    </edges>
+  </graph>
+</gexf>
