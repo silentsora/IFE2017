@@ -24,7 +24,7 @@ ajax({
 
 		graph.nodes.forEach(function (node){
 			node.itemStyle = null;
-			node.symbolSize = 20;
+			node.symbolSize = 14;
 
 			switch(node.attributes.value){		// 根据数据标记分类
 				case 'l':
@@ -61,15 +61,17 @@ function buildChart(graph,categories){
 	option = {
 		title: {
 			text: 'Books about US politics',
+			subtext: '关于美国政治的书籍关系图。\n连接线表示买了这本书的人还买了哪些书。\n类别分民主、保守和中立三种。\n\n数据来自：www-personal.umich.edu/~mejn/netdata/',
+			sublink: 'http://www-personal.umich.edu/~mejn/netdata/',
 			top: '5%',
 			left: '5%'
 		},
 		tooltip: {
-			formatter: '{b}</br>political complexion: {c}'
+			formatter: '{b}<br />political complexion: {c}'
 		},
 		legend: [{
 			data: categories,
-			top: '5%',
+			bottom: '5%',
 			right: '5%'
 		}],
 		series: [

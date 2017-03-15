@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title>infinite_scroll</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="keywords" content="infinite scroll">
+	<meta name="description" content="infinite scroll">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		h1{
+			text-align: center;
+			font-size: 32px;
+			margin: 40px;
+		}
+		#list > li{
+			height: 50px;
+			list-style: none;
+			background-color: lightgrey;
+			text-align: center;
+			line-height: 50px;
+			border: 1px solid grey;
+			margin: 10px 100px;
+		}
+		.footer{
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>无限滚动加载</h1>
+	<ul id="list">
+	</ul>
+	<div class="footer">向下滚动加载</div>
+</body>
+<script>
+	var list = [];
+	var now = 0;
+	var ele = document.getElementById("list");
+	for(var i = 0;i < 200;i++){
+		list[i] = document.createElement("li");
+		list[i].appendChild(document.createTextNode("number" + (i+1)));
+	}
+
+	var sHeight = document.body.scrollHeight==0?
+		document.documentElement.scrollHeight:document.body.scrollHeight;
+
+	// 判断是否有滚动条
+	while(sHeight <= document.documentElement.clientHeight)
+	{
+		for(var i = 0;i < 1;i++){
+			ele.appendChild(list[now+i]);
+		}
+		now += 1;
+		sHeight = document.body.scrollHeight==0?
+		document.documentElement.scrollHeight:document.body.scrollHeight;
+	}
+	
+	window.onscroll = function(){
+		if(now >= 200)return false;
+		var sHeight = document.body.scrollHeight==0?
+		document.documentElement.scrollHeight:document.body.scrollHeight;
+
+		var sTop = document.body.scrollTop==0?
+		document.documentElement.scrollTop:document.body.scrollTop;
+
+		var cHeight = document.documentElement.clientHeight;
+
+		if(sHeight - sTop <= cHeight){
+			for(var i = 0;i < 10;i++){
+				ele.appendChild(list[now+i]);
+			}
+			now += 10;
+		}
+	}
+</script>
+</html>
