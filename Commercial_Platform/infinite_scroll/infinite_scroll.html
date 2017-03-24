@@ -59,6 +59,9 @@
 			// 更新scrllHeight的值
 			srlHeight = document.body.scrollHeight==0?
 		document.documentElement.scrollHeight:document.body.scrollHeight;
+
+			// 容错 避免意外进入死循环
+			if(now > 300)break;
 		}
 	}
 
