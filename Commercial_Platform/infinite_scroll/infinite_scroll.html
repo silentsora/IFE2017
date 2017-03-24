@@ -39,44 +39,57 @@
 	<div class="footer">向下滚动加载</div>
 </body>
 <script>
-	var list = [];
 	var now = 0;
-	var ele = document.getElementById("list");
-	for(var i = 0;i < 200;i++){
-		list[i] = document.createElement("li");
-		list[i].appendChild(document.createTextNode("number" + (i+1)));
-	}
+	var list = document.getElementById("list");
 
-	var sHeight = document.body.scrollHeight==0?
+	// 首次加载列表
+	listInit();
+
+	window.addEventListener("scroll",scrollCheck);
+
+	function listInit(){
+		// 兼容性处理
+		var srlHeight = document.body.scrollHeight==0?
 		document.documentElement.scrollHeight:document.body.scrollHeight;
 
-	// 判断是否有滚动条
-	while(sHeight <= document.documentElement.clientHeight)
-	{
-		for(var i = 0;i < 1;i++){
-			ele.appendChild(list[now+i]);
+		// 不足以覆盖屏幕则延长列表
+		while(srlHeight <= document.documentElement.clientHeight){
+			listIncrease();	
+
+			// 更新scrllHeight的值
+			srlHeight = document.body.scrollHeight==0?
+		document.documentElement.scrollHeight:document.body.scrollHeight;
 		}
-		now += 1;
-		sHeight = document.body.scrollHeight==0?
-		document.documentElement.scrollHeight:document.body.scrollHeight;
 	}
-	
-	window.onscroll = function(){
-		if(now >= 200)return false;
-		var sHeight = document.body.scrollHeight==0?
+
+	function scrollCheck(){
+		// 兼容性处理
+		var srlHeight = document.body.scrollHeight==0?
 		document.documentElement.scrollHeight:document.body.scrollHeight;
 
-		var sTop = document.body.scrollTop==0?
+		var srlTop = document.body.scrollTop==0?
 		document.documentElement.scrollTop:document.body.scrollTop;
 
-		var cHeight = document.documentElement.clientHeight;
+		var cltHeight = document.documentElement.clientHeight;
 
-		if(sHeight - sTop <= cHeight){
-			for(var i = 0;i < 10;i++){
-				ele.appendChild(list[now+i]);
-			}
-			now += 10;
+		// 滚动条到达底部则延长列表
+		if(srlHeight - srlTop <= cltHeight){
+			listIncrease();
 		}
+	}
+
+	function listIncrease(){
+		// 使用fragment缓存批量创建的节点
+		var fragment = document.createDocumentFragment();
+
+		for(var i = 0;i < 20;i++){
+			var liNode = document.createElement("li");
+			liNode.innerText = "node" + (now+i+1);
+			fragment.appendChild(liNode);
+		}
+
+		now += 20;
+		list.appendChild(fragment);
 	}
 </script>
 </html>
