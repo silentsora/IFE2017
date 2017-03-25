@@ -8,7 +8,6 @@ function Observer (obj,isRecursion){
 	for(let key in obj){
 		let val = obj[key];
 		let that = this;
-		this.data[key] = val;
 
 		Object.defineProperty(this.data,key,{
 			set: function (newVal){
@@ -27,7 +26,7 @@ function Observer (obj,isRecursion){
 			}
 		});
 
-		//;
+		this.data[key] = val;
 	}
 
 	if(isRecursion)return this.data;
