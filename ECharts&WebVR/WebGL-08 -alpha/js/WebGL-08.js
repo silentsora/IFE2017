@@ -1,8 +1,5 @@
 // 考虑做成加载后先加载普通模型，实际模型加载完成后再替换车体 
 
-Physijs.scripts.worker = '../../src/physijs_worker.js';
-Physijs.scripts.ammo = '../src/ammo.js';
-
 (function init(){
 	window.requestAnimationFrame = window.requestAnimationFrame 
 	    || window.mozRequestAnimationFrame
@@ -16,11 +13,7 @@ Physijs.scripts.ammo = '../src/ammo.js';
 	var v = 0;
 	var keyA = keyS = keyD = keyW = false;
 
-	var pivot = new Physijs.BoxMesh(
-		new THREE.BoxGeometry(3,4,6),
-		new THREE.MeshBasicMaterial({color: 0xffffff})
-	);
-	pivot.position.y = 2;
+	var pivot = new THREE.Object3D();
 
 	// stats
 	stat = new Stats();
@@ -37,19 +30,7 @@ Physijs.scripts.ammo = '../src/ammo.js';
 	renderer.shadowMapSoft = true;
 
 	// scene
-	var scene = new Physijs.Scene({fixedTimeStep: 1/60});
-	scene.addEventListener('update',function(){/*
-		keyCheck();
-
-		carMove();
-
-		roadUpdate();
-
-		cameraPers.lookAt(pivot.position);
-
-		light.position.z = pivot.position.z - 30;;
-		light.target = pivot;*/
-	})
+	var scene = new THREE.Scene();
 
 	// camera 
 	var cameraPers = new THREE.PerspectiveCamera(60,16/9,1,400);
@@ -79,42 +60,27 @@ Physijs.scripts.ammo = '../src/ammo.js';
 	controls.rotateSpeed = 2.0;
 
 	// object
-	var box = new Physijs.BoxMesh(
-		new THREE.CubeGeometry(2,2,2),
-		new THREE.MeshBasicMaterial({color: 0xffffff})
-	);
-	box.position.set(0,10,0)
-	scene.add(box);
-
-	var roadGeometry = new THREE.BoxGeometry(40,1,500);
-
-	var roadTexture = Physijs.createMaterial(
-		new THREE.MeshLambertMaterial({ map: new THREE.TextureLoader().load( '../../obj/road.jpg' ) }),
-		.8, // high friction
-		.4 // low restitution
-	);
-	roadTexture.map.wrapS = roadTexture.map.wrapT = THREE.RepeatWrapping;
-	roadTexture.map.repeat.set(1,12.5);
+	var texture1 = new THREE.TextureLoader().load('../../obj/road.jpg');
+	texture1.wrapS = texture1.wrapT = THREE.RepeatWrapping;
+	texture1.repeat.set(1,12.5);
 
 	function createRoad(x,y,z){
-		let road = new Physijs.BoxMesh(
-			roadGeometry,
-			roadTexture,
-			0
+		var road = new THREE.Mesh(new THREE.PlaneGeometry(40,500),
+			new THREE.MeshLambertMaterial({
+				color: 0xffffff,
+				map: texture1
+			})
 		);
 		road.position.set(x,y,z);
-		road.__dirtyPosition = true;
+		road.rotation.x = -Math.PI / 2;
 		road.receiveShadow = true;
 		return road;
 	}
 
-	var roadA = createRoad(0,-0.5,-500);
-	var roadB = createRoad(0,-0.5,0);
-	var roadC = createRoad(0,-0.5,500);
-
-	scene.add(roadA);
-	scene.add(roadB);
-	scene.add(roadC);
+	var roadA = createRoad(0,0,-500);
+	var roadB = createRoad(0,0,0);
+	var roadC = createRoad(0,0,500);
+	scene.add(roadA,roadB,roadC);
 
 	// loader
 	var onProgress = function ( xhr ) {  
@@ -135,30 +101,18 @@ Physijs.scripts.ammo = '../src/ammo.js';
 		objLoader.setMaterials(materials);
 		objLoader.setPath('../../obj/Protect_Van/');
 		objLoader.load('Protect_Van.obj',function(object){
-			// transform into physijs object
-			var model = object;
-			for (let x in model.children){
-				let material = Physijs.createMaterial(
-					model.children[x].material,
-					1,
-					0
-				);
-				let mesh = new Physijs.BoxMesh(
-					model.children[x].geometry,
-					material,
-					1
-				);
-				mesh.castShadow = true;
-				mesh.receiveShadow = true;
+			object.children[0].castShadow = true;
+			object.children[1].castShadow = true;
+			object.children[0].receiveShadow = true;
+			object.children[1].receiveShadow = true;
 
-				pivot.add(mesh);
-			}
+			pivot.position = object.position;
+			pivot.add(object);
 		},onProgress,onError);
 	});
 
 	//render
 	scene.add(pivot);
-	scene.simulate();
 	id = requestAnimationFrame(draw);
 
 	function draw(){
@@ -176,7 +130,6 @@ Physijs.scripts.ammo = '../src/ammo.js';
 		light.target = pivot;
 
 		controls.update();
-		scene.simulate();
 		renderer.render(scene,cameraPers);
 
 		id = requestAnimationFrame(draw);
@@ -227,7 +180,7 @@ Physijs.scripts.ammo = '../src/ammo.js';
 			'z: ' + pivot.position.z.toFixed(2);
 
 		checkDirection();
-		//checkBorder();
+		checkBorder();
 
 		function checkDirection(){
 			if(keyW)carMoveAbove();
@@ -255,7 +208,6 @@ Physijs.scripts.ammo = '../src/ammo.js';
 					if(v > 0)v = 0;
 				} 
 				pivot.translateZ(v);	
-				pivot.__dirtyPosition = true;
 			}
 		}
 
@@ -263,28 +215,20 @@ Physijs.scripts.ammo = '../src/ammo.js';
 			if(v < 0.5)v += 4*a;
 			else if(v < 2)v += a;
 			pivot.translateZ(v);
-			pivot.__dirtyPosition = true;
-			//pivot.setLinearVelocity(new THREE.Vector3(0,0,v*10));
 		}
 
 		function carMoveBack(){
 			if(v > -0.5)v -= 4*a;
 			else if(v > -2)v -= a;
 			pivot.translateZ(v);
-			pivot.__dirtyPosition = true;
 		}
 
 		function carTurnLeft(){
-			/*pivot.setAngularVelocity(
-				new THREE.Vector3(0,3,0)
-			);*/
 			pivot.rotation.y += Math.PI/128;
-			pivot.__dirtyRotation = true;
 		}
 
 		function carTurnRight(){
 			pivot.rotation.y -= Math.PI/128;
-			pivot.__dirtyRotation = true;
 		}
 
 		// 边界检查
@@ -343,9 +287,6 @@ Physijs.scripts.ammo = '../src/ammo.js';
 			default:
 				break;
 		}
-		roadA.__dirtyPosition = true;
-		roadB.__dirtyPosition = true;
-		roadC.__dirtyPosition = true;
 	}
 })();
 
