@@ -85,8 +85,9 @@
 	// loader
 	var onProgress = function ( xhr ) {  
         if ( xhr.lengthComputable ) {  
-        	var percentComplete = xhr.loaded / xhr.total * 100;  
+        	var percentComplete = Math.floor(xhr.loaded / xhr.total * 100);  
         }  
+        document.getElementById("percent").innerHTML = percentComplete + '%';
     };  
   
 	var onError = function ( xhr ) { }; 
@@ -108,12 +109,15 @@
 
 			pivot.position = object.position;
 			pivot.add(object);
+			scene.add(pivot);
+
+			var loading = document.getElementById('loading');
+			document.body.removeChild(loading);
+
+			// render
+			id = requestAnimationFrame(draw);
 		},onProgress,onError);
 	});
-
-	//render
-	scene.add(pivot);
-	id = requestAnimationFrame(draw);
 
 	function draw(){
 		stat.begin();
